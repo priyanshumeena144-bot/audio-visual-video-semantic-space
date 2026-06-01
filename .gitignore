@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+wandb/
+data/raw/
+data/processed/
+checkpoints/*.pt
+outputs/**/*.json
+outputs/**/*.csv
+outputs/**/*.png
+outputs/**/*.jpg
+*.log
+
