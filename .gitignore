@@ -1,14 +1,25 @@
 __pycache__/
-*.pyc
+*.py[cod]
 .venv/
+venv/
+env/
 .env
-wandb/
-data/raw/
-data/processed/
-checkpoints/*.pt
-outputs/**/*.json
-outputs/**/*.csv
-outputs/**/*.png
-outputs/**/*.jpg
-*.log
 
+# Real datasets and extracted benchmark features can be large.
+data/manifests/*.csv
+data/splits/
+data/splits_fast/
+features/cache/
+features/cache_fast/
+runs/
+
+# Keep smoke-test artifacts small and reproducible.
+!features/smoke/
+!data/splits_smoke/
+!runs_smoke/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

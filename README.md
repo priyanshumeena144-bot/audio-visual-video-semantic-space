@@ -104,6 +104,16 @@ python visualize.py --model transformer --checkpoint runs/transformer/best.pt --
 
 Figures are saved to `runs/figures/`.
 
+## Demo Video
+
+Generate a short MP4 demo for submission:
+
+```bash
+python demo/make_demo_video.py --eval-json runs_smoke/mlp_eval.json --out demo/project_demo.mp4
+```
+
+See `DEMO.md` for a suggested narration script.
+
 ## Results Table
 
 Fill this table after running the pipeline on your local MSR-VTT subset:
